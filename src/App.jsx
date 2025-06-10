@@ -59,7 +59,7 @@ function App() {
               className="nav-section-btn"
               onClick={() => scrollToSection('about')}
             >
-              ABOUT<span className="nav-description">Who I am and what drives me.</span>
+              ABOUT ME<span className="nav-description">Who I am and what drives me.</span>
             </button>
             <button 
               className="nav-section-btn"
@@ -129,54 +129,26 @@ function App() {
 
       {/* Section 1: About */}
       <section id="about" className="numbered-section">
-        <div className="section-header">
+        <div className="section-header centered">
           <h2>About Me</h2>
         </div>
         
         <div className="about-content">
-          <div className="about-card">
-            <div className="elevator-pitch">
-              <p className="intro-text">
-                Born and raised in Queens, NYC, I'm a rising cybersecurity analyst currently on track to earn my Bachelor of Science in Cybersecurity in 2026 and my Master of Science in Cybersecurity in 2027 through the Fast Track B.S./M.S. program at St. John's University. Through hands on projects like developing a mobile application, building a full stack banking application, and competing in Capture the Flag events, I've gained experience in penetration testing, Python, Linux, and mobile development. As an attack member of the STJ CyberStorm Team and ACM Student Chapter, I've grown both technically and professionally, connecting classroom knowledge with real-world application.
-              </p>
-              
-              <p className="mission-text">
-                I'm passionate about spending time with my twin who has special interests and playing sports like golf, football and pickleball. As a proud Knicks and Giants fan, I love following the highs and heartbreaks of New York sports. I'm also deeply interested in finance and markets, always curious about how the world works at both a technical and economic level. Driven by curiosity and core family values, I strive to use technology as a tool for solving real world problems and creating fundamentals.
-              </p>
+          <div className="about-layout">
+            <div className="about-text">
+              <div className="elevator-pitch">
+                <p className="intro-text">
+                  Born and raised in Queens, NYC, I'm a rising cybersecurity analyst currently on track to earn my Bachelor of Science in Cybersecurity in 2026 and my Master of Science in Cybersecurity in 2027 through the Fast Track B.S./M.S. program at St. John's University. Through hands on projects like developing a mobile application, building a full stack banking application, and competing in Capture the Flag events, I've gained experience in penetration testing, Python, Linux, and mobile development. As an attack member of the STJ CyberStorm Team and ACM Student Chapter, I've grown both technically and professionally, connecting classroom knowledge with real-world application.
+                </p>
+                
+                <p className="mission-text">
+                  I'm passionate about spending time with my twin who has special interests and playing sports like golf, football and pickleball. As a proud Knicks and Giants fan, I love following the highs and heartbreaks of New York sports. I'm also deeply interested in finance and markets, always curious about how the world works at both a technical and economic level. Driven by curiosity and core family values, I strive to use technology as a tool for solving real world problems and creating fundamentals.
+                </p>
+              </div>
             </div>
             
-            <div className="about-highlights">
-              <div className="highlight-item">
-                <div className="highlight-icon">🎓</div>
-                <div className="highlight-content">
-                  <h4>Academic Excellence</h4>
-                  <p>Dean's List recipient with 3.88 GPA in Cybersecurity</p>
-                </div>
-              </div>
-              
-              <div className="highlight-item">
-                <div className="highlight-icon">💼</div>
-                <div className="highlight-content">
-                  <h4>Leadership Experience</h4>
-                  <p>Leading teams of 8-10 people for 3+ years</p>
-                </div>
-              </div>
-              
-              <div className="highlight-item">
-                <div className="highlight-icon">🚀</div>
-                <div className="highlight-content">
-                  <h4>Innovation Mindset</h4>
-                  <p>Hackathon winner with proven project delivery</p>
-                </div>
-              </div>
-              
-              <div className="highlight-item">
-                <div className="highlight-icon">🔒</div>
-                <div className="highlight-content">
-                  <h4>Security Focus</h4>
-                  <p>Google Cybersecurity certified with hands-on experience</p>
-                </div>
-              </div>
+            <div className="about-image">
+              <img src="/sean-photo.JPG" alt="Sean McGrory" className="about-photo" />
             </div>
           </div>
         </div>
