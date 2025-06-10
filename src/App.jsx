@@ -57,9 +57,9 @@ function App() {
           <div className="hero-navigation">
             <button 
               className="nav-section-btn"
-              onClick={() => scrollToSection('education')}
+              onClick={() => scrollToSection('about')}
             >
-              EDUCATION<span className="nav-description">Building my foundation at St. John's University.</span>
+              ABOUT<span className="nav-description">Who I am and what drives me.</span>
             </button>
             <button 
               className="nav-section-btn"
@@ -69,15 +69,15 @@ function App() {
             </button>
             <button 
               className="nav-section-btn"
-              onClick={() => scrollToSection('skills')}
-            >
-              SKILLS<span className="nav-description">Cybersecurity expertise and technical proficiency.</span>
-            </button>
-            <button 
-              className="nav-section-btn"
               onClick={() => scrollToSection('experience')}
             >
               EXPERIENCE<span className="nav-description">Leading teams and building connections.</span>
+            </button>
+            <button 
+              className="nav-section-btn"
+              onClick={() => scrollToSection('education-skills')}
+            >
+              EDUCATION & SKILLS<span className="nav-description">Academic foundation and technical expertise.</span>
             </button>
             <button 
               className="nav-section-btn"
@@ -127,23 +127,56 @@ function App() {
 
       </header>
 
-      {/* Section 1: Education */}
-      <section id="education" className="numbered-section">
+      {/* Section 1: About */}
+      <section id="about" className="numbered-section">
         <div className="section-header">
-          <span className="section-number">1</span>
-          <h2>Education.</h2>
+          <h2>About Me</h2>
         </div>
         
-        <div className="education-content">
-          <div className="education-card">
-            <div className="education-header">
-              <h3>Bachelor of Science, Cyber Security</h3>
-              <span className="date-badge">Expected May 2026</span>
+        <div className="about-content">
+          <div className="about-card">
+            <div className="elevator-pitch">
+              <p className="intro-text">
+                Born and raised in Queens, NYC, I'm a rising cybersecurity analyst currently on track to earn my Bachelor of Science in Cybersecurity in 2026 and my Master of Science in Cybersecurity in 2027 through the Fast Track B.S./M.S. program at St. John's University. Through hands on projects like developing a mobile application, building a full stack banking application, and competing in Capture the Flag events, I've gained experience in penetration testing, Python, Linux, and mobile development. As an attack member of the STJ CyberStorm Team and ACM Student Chapter, I've grown both technically and professionally, connecting classroom knowledge with real-world application.
+              </p>
+              
+              <p className="mission-text">
+                I'm passionate about spending time with my twin who has special interests and playing sports like golf, football and pickleball. As a proud Knicks and Giants fan, I love following the highs and heartbreaks of New York sports. I'm also deeply interested in finance and markets, always curious about how the world works at both a technical and economic level. Driven by curiosity and core family values, I strive to use technology as a tool for solving real world problems and creating fundamentals.
+              </p>
             </div>
-            <h4>St. John's University, Queens, NY</h4>
-            <div className="education-details">
-              <p><strong>Major GPA:</strong> 3.88</p>
-              <p><strong>Relevant Coursework:</strong> Data Security and Cryptography, Network Security, Data Structures, Secure Software Development</p>
+            
+            <div className="about-highlights">
+              <div className="highlight-item">
+                <div className="highlight-icon">🎓</div>
+                <div className="highlight-content">
+                  <h4>Academic Excellence</h4>
+                  <p>Dean's List recipient with 3.88 GPA in Cybersecurity</p>
+                </div>
+              </div>
+              
+              <div className="highlight-item">
+                <div className="highlight-icon">💼</div>
+                <div className="highlight-content">
+                  <h4>Leadership Experience</h4>
+                  <p>Leading teams of 8-10 people for 3+ years</p>
+                </div>
+              </div>
+              
+              <div className="highlight-item">
+                <div className="highlight-icon">🚀</div>
+                <div className="highlight-content">
+                  <h4>Innovation Mindset</h4>
+                  <p>Hackathon winner with proven project delivery</p>
+                </div>
+              </div>
+              
+              <div className="highlight-item">
+                <div className="highlight-icon">🔒</div>
+                <div className="highlight-content">
+                  <h4>Security Focus</h4>
+                  <p>Google Cybersecurity certified with hands-on experience</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -154,7 +187,7 @@ function App() {
         <div className="section-header">
           <span className="section-number">2</span>
           <h2>Projects.</h2>
-          <p className="section-subtitle">Showcasing my top projects.</p>
+          <p className="section-subtitle">Turning ideas into secure, innovative solutions.</p>
         </div>
         
         <div className="projects-grid">
@@ -208,55 +241,12 @@ function App() {
         </div>
       </section>
 
-      {/* Section 3: Skills */}
-      <section id="skills" className="numbered-section">
-        <div className="section-header">
-          <span className="section-number">3</span>
-          <h2>Skills.</h2>
-        </div>
-        
-        <div className="skills-grid">
-          <div className="skill-category">
-            <h3>Programming Languages</h3>
-            <div className="skills-list">
-              <span className="skill-tag">Java</span>
-              <span className="skill-tag">JavaScript</span>
-              <span className="skill-tag">Python</span>
-              <span className="skill-tag">React</span>
-              <span className="skill-tag">React Native</span>
-            </div>
-          </div>
-          
-          <div className="skill-category">
-            <h3>Cybersecurity</h3>
-            <div className="skills-list">
-              <span className="skill-tag">Google Cybersecurity Certificate</span>
-              <span className="skill-tag">Threat Analysis</span>
-              <span className="skill-tag">Risk Management</span>
-              <span className="skill-tag">SIEM Tools</span>
-              <span className="skill-tag">Vulnerability Testing</span>
-            </div>
-          </div>
-          
-          <div className="skill-category">
-            <h3>Systems & Tools</h3>
-            <div className="skills-list">
-              <span className="skill-tag">Windows</span>
-              <span className="skill-tag">macOS</span>
-              <span className="skill-tag">Linux</span>
-              <span className="skill-tag">Virtual Machines</span>
-              <span className="skill-tag">AWS</span>
-              <span className="skill-tag">Microsoft Office</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 4: Experience */}
+      {/* Section 3: Experience */}
       <section id="experience" className="numbered-section">
         <div className="section-header">
-          <span className="section-number">4</span>
+          <span className="section-number">3</span>
           <h2>Experience.</h2>
+          <p className="section-subtitle">Leading teams and building connections.</p>
         </div>
         
         <div className="experience-content">
@@ -277,6 +267,94 @@ function App() {
               <li>Created weekly employee performance reports to management and quarterly employee performance incentives</li>
               <li>Moderated monthly V.I.P. day for children with special needs and families to visit with planned activities</li>
             </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 4: Education & Skills */}
+      <section id="education-skills" className="numbered-section">
+        <div className="section-header">
+          <span className="section-number">4</span>
+          <h2>Education & Skills.</h2>
+          <p className="section-subtitle">Academic foundation and technical expertise.</p>
+        </div>
+        
+        <div className="education-skills-content">
+          {/* Education Part */}
+          <div className="education-card">
+            <div className="education-header">
+              <div className="degree-info">
+                <h3>Bachelor of Science in Cyber Security</h3>
+                <h4>St. John's University</h4>
+                <p className="location">Queens, New York</p>
+              </div>
+              <div className="education-badges">
+                <span className="date-badge">Expected May 2026</span>
+                <span className="gpa-badge">GPA: 3.88</span>
+              </div>
+            </div>
+            
+            <div className="education-details">
+              <div className="coursework-section">
+                <h5>Core Coursework</h5>
+                <div className="course-tags">
+                  <span className="course-tag">Data Security & Cryptography</span>
+                  <span className="course-tag">Network Security</span>
+                  <span className="course-tag">Data Structures</span>
+                  <span className="course-tag">Secure Software Development</span>
+                  <span className="course-tag">Computer Programming</span>
+                  <span className="course-tag">Database Systems</span>
+                </div>
+              </div>
+              
+              <div className="certifications-section">
+                <h5>Professional Development</h5>
+                <div className="cert-item">
+                  <span className="cert-name">Google Cybersecurity Professional Certificate</span>
+                  <span className="cert-status">Completed</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Skills Part */}
+          <div className="skills-section">
+            <h3 className="skills-title">Technical Skills</h3>
+            <div className="skills-grid">
+              <div className="skill-category">
+                <h4>Programming Languages</h4>
+                <div className="skills-list">
+                  <span className="skill-tag">Java</span>
+                  <span className="skill-tag">JavaScript</span>
+                  <span className="skill-tag">Python</span>
+                  <span className="skill-tag">React</span>
+                  <span className="skill-tag">React Native</span>
+                </div>
+              </div>
+              
+              <div className="skill-category">
+                <h4>Cybersecurity</h4>
+                <div className="skills-list">
+                  <span className="skill-tag">Threat Analysis</span>
+                  <span className="skill-tag">Risk Management</span>
+                  <span className="skill-tag">SIEM Tools</span>
+                  <span className="skill-tag">Vulnerability Testing</span>
+                  <span className="skill-tag">Network Security</span>
+                </div>
+              </div>
+              
+              <div className="skill-category">
+                <h4>Systems & Tools</h4>
+                <div className="skills-list">
+                  <span className="skill-tag">Windows</span>
+                  <span className="skill-tag">macOS</span>
+                  <span className="skill-tag">Linux</span>
+                  <span className="skill-tag">Virtual Machines</span>
+                  <span className="skill-tag">AWS</span>
+                  <span className="skill-tag">Microsoft Office</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
