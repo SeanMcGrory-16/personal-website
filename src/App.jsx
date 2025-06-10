@@ -18,7 +18,7 @@ function App() {
   // Track active section on scroll
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['education', 'projects', 'skills', 'experience', 'honors']
+      const sections = ['education', 'projects', 'skills', 'experience', 'awards', 'gallery']
       const scrollPosition = window.scrollY + 100
 
       for (const section of sections) {
@@ -44,12 +44,14 @@ function App() {
       {/* Hero Header Section */}
       <header className="hero-header">
         <div className="hero-content">
-          <div className="hero-text">
-            <h2 className="hero-subtitle">Welcome! I'm</h2>
-            <h1 className="hero-title">Sean McGrory.</h1>
-            <p className="hero-description">
-              Cybersecurity student at St. John's University, passionate about secure software development and innovative solutions.
-            </p>
+          <div className="hero-main">
+            <div className="hero-image">
+                             <img src="/sean-headshot.jpeg" alt="Sean McGrory" className="profile-photo" />
+            </div>
+            <div className="hero-text">
+              <h2 className="hero-subtitle">Welcome! I'm</h2>
+              <h1 className="hero-title">Sean McGrory.</h1>
+            </div>
           </div>
           
           <div className="hero-navigation">
@@ -79,9 +81,15 @@ function App() {
             </button>
             <button 
               className="nav-section-btn"
-              onClick={() => scrollToSection('honors')}
+              onClick={() => scrollToSection('awards')}
             >
-              HONORS<span className="nav-description">Recognition for innovation and excellence.</span>
+              AWARDS<span className="nav-description">Recognition for innovation and excellence.</span>
+            </button>
+            <button 
+              className="nav-section-btn"
+              onClick={() => scrollToSection('gallery')}
+            >
+              GALLERY<span className="nav-description">Snapshots of my journey and achievements.</span>
             </button>
           </div>
 
@@ -116,25 +124,7 @@ function App() {
           </div>
         </div>
 
-        {/* Floating Navigation */}
-        <nav className="floating-nav">
-          {[
-            { id: 'education', label: '1' },
-            { id: 'projects', label: '2' },
-            { id: 'skills', label: '3' },
-            { id: 'experience', label: '4' },
-            { id: 'honors', label: '5' }
-          ].map(({ id, label }) => (
-            <button
-              key={id}
-              className={`nav-dot ${activeSection === id ? 'active' : ''}`}
-              onClick={() => scrollToSection(id)}
-              aria-label={`Go to ${id} section`}
-            >
-              {label}
-            </button>
-          ))}
-        </nav>
+
       </header>
 
       {/* Section 1: Education */}
@@ -291,11 +281,11 @@ function App() {
         </div>
       </section>
 
-      {/* Section 5: Honors & Interests */}
-      <section id="honors" className="numbered-section">
+      {/* Section 5: Awards & Interests */}
+      <section id="awards" className="numbered-section">
         <div className="section-header">
           <span className="section-number">5</span>
-          <h2>Honors & Interests.</h2>
+          <h2>Awards & Interests.</h2>
         </div>
         
         <div className="honors-content">
@@ -317,6 +307,65 @@ function App() {
                 <li>Member of the St. John's Cyberstorm Team, participated in tryhackme CTF boxes and hackathon events</li>
                 <li>Interested in spending time with my twin brother who has special needs, playing golf and pickleball</li>
               </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 6: Gallery */}
+      <section id="gallery" className="numbered-section">
+        <div className="section-header">
+          <span className="section-number">6</span>
+          <h2>Gallery.</h2>
+          <p className="section-subtitle">Snapshots of my journey, one moment at a time.</p>
+        </div>
+        
+        <div className="gallery-grid">
+          <div className="gallery-item">
+            <img src="https://via.placeholder.com/300x200/87ceeb/2c3e50?text=Hackathon+Win" alt="Hackathon Victory" className="gallery-photo" />
+            <div className="gallery-caption">
+              <h4>1st Place - St. John's Hackathon</h4>
+              <p>Winning the hackathon with our mobile networking app</p>
+            </div>
+          </div>
+          
+          <div className="gallery-item">
+            <img src="https://via.placeholder.com/300x200/87ceeb/2c3e50?text=CTF+Competition" alt="CTF Competition" className="gallery-photo" />
+            <div className="gallery-caption">
+              <h4>2nd Place - ISC2 CTF Competition</h4>
+              <p>Solving real-world cybersecurity challenges</p>
+            </div>
+          </div>
+          
+          <div className="gallery-item">
+            <img src="https://via.placeholder.com/300x200/87ceeb/2c3e50?text=Dean's+List" alt="Dean's List Recognition" className="gallery-photo" />
+            <div className="gallery-caption">
+              <h4>Dean's List Achievement</h4>
+              <p>Academic excellence at St. John's University</p>
+            </div>
+          </div>
+          
+          <div className="gallery-item">
+            <img src="https://via.placeholder.com/300x200/87ceeb/2c3e50?text=Leadership+Team" alt="Leadership at Launch" className="gallery-photo" />
+            <div className="gallery-caption">
+              <h4>Team Leadership</h4>
+              <p>Leading the event coordination team at Launch Trampoline Park</p>
+            </div>
+          </div>
+          
+          <div className="gallery-item">
+            <img src="https://via.placeholder.com/300x200/87ceeb/2c3e50?text=University+Life" alt="University Campus" className="gallery-photo" />
+            <div className="gallery-caption">
+              <h4>St. John's University</h4>
+              <p>Campus life and cybersecurity studies</p>
+            </div>
+          </div>
+          
+          <div className="gallery-item">
+            <img src="https://via.placeholder.com/300x200/87ceeb/2c3e50?text=Personal+Time" alt="Personal Interests" className="gallery-photo" />
+            <div className="gallery-caption">
+              <h4>Personal Interests</h4>
+              <p>Golf, pickleball, and family time</p>
             </div>
           </div>
         </div>
