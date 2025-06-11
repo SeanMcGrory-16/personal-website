@@ -59,31 +59,31 @@ function App() {
               className="nav-section-btn"
               onClick={() => scrollToSection('about')}
             >
-              ABOUT ME<span className="nav-description">Who I am and what drives me.</span>
+              ABOUT ME<span className="nav-description">Queens raised. Cyber trained. Always aimed.</span>
             </button>
             <button 
               className="nav-section-btn"
               onClick={() => scrollToSection('projects')}
             >
-              PROJECTS<span className="nav-description">Turning ideas into secure, innovative solutions.</span>
+              PROJECTS<span className="nav-description">Code deployed. Bugs destroyed. Fully employed (eventually).</span>
             </button>
             <button 
               className="nav-section-btn"
               onClick={() => scrollToSection('experience')}
             >
-              EXPERIENCE<span className="nav-description">Leading teams and building connections.</span>
+              EXPERIENCE<span className="nav-description">Learning in motion. Leading by example.</span>
             </button>
             <button 
               className="nav-section-btn"
               onClick={() => scrollToSection('education-skills')}
             >
-              EDUCATION & SKILLS<span className="nav-description">Academic foundation and technical expertise.</span>
+              EDUCATION & SKILLS<span className="nav-description">Books cracked. Labs hacked. Brain fully stacked.</span>
             </button>
             <button 
               className="nav-section-btn"
               onClick={() => scrollToSection('awards')}
             >
-              AWARDS<span className="nav-description">Recognition for innovation and excellence.</span>
+              AWARDS<span className="nav-description">Started with curiosity. Earned by putting in work.</span>
             </button>
             <button 
               className="nav-section-btn"

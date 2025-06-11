@@ -121,7 +121,7 @@ body {
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
-  text-align: left;
+  text-align: center;
   font-size: 1rem;
   font-weight: 600;
 }
@@ -138,6 +138,15 @@ body {
   font-weight: 400;
   color: #34495e;
   margin-top: 0.5rem;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.nav-section-btn:hover .nav-description {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .hero-contact {
