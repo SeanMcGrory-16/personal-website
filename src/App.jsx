@@ -138,7 +138,7 @@ function App() {
             <div className="about-text">
               <div className="elevator-pitch">
                 <p className="intro-text">
-                  Born and raised in Queens, NYC. I'm currently on track to earn my Bachelor of Science in Cybersecurity in 2026 and my Master of Science in 2027 through the Fast Track B.S./M.S. program at St. John's University. Through hands on projects like developing a mobile application, building a full stack banking application, and competing in Capture the Flag events, I've gained experience in penetration testing, Python, Linux, and mobile development. As an attack member of the STJ CyberStorm Team and ACM Student Chapter, I've grown both technically and professionally, connecting classroom knowledge with real-world application.
+                  Born and raised in Queens, NYC. I'm currently on track to earn my Bachelor of Science in Cybersecurity in 2026 and my Master of Science in 2027 through the Fast Track B.S./M.S. program at St. John's University. Through hands on projects like developing a mobile application, building a full stack banking application, and competing in Capture the Flag events, I've gained experience in penetration testing, Python, Linux, and mobile development. As a member of the ACM Student Chapter and STJ CyberStorm Team, I've grown both technically and professionally, connecting classroom knowledge with real-world application.
                 </p>
                 
                 <p className="mission-text">
@@ -168,7 +168,7 @@ function App() {
               Utilized Burp Suite Professional for comprehensive web application security testing and vulnerability assessment. Performed penetration testing, intercepted HTTP requests, and identified security flaws in web applications through automated scanning and manual testing techniques.
             </p>
             <div className="project-buttons">
-              <button className="project-btn primary">View Project</button>
+              <a href="https://portswigger.net/burp" target="_blank" rel="noopener noreferrer" className="project-btn primary">Learn More</a>
             </div>
           </div>
 
@@ -179,7 +179,7 @@ function App() {
               Leveraged Nmap for network discovery and security auditing to analyze server and website infrastructure details. Conducted port scanning, service detection, and OS fingerprinting to assess network security posture and identify potential vulnerabilities in target systems.
             </p>
             <div className="project-buttons">
-              <button className="project-btn primary">View Project</button>
+              <a href="https://nmap.org/" target="_blank" rel="noopener noreferrer" className="project-btn primary">Learn More</a>
             </div>
           </div>
 
@@ -190,7 +190,18 @@ function App() {
               Employed Wireshark for deep packet inspection and network traffic analysis to investigate security incidents and monitor network communications. Analyzed incoming network traffic, examined packet contents, and identified suspicious activities for incident response and forensic analysis.
             </p>
             <div className="project-buttons">
-              <button className="project-btn primary">View Project</button>
+              <a href="https://www.wireshark.org/" target="_blank" rel="noopener noreferrer" className="project-btn primary">Learn More</a>
+            </div>
+          </div>
+
+          <div className="project-card">
+            <h3>Ghidra</h3>
+            <p className="project-subtitle">St John's Cyberstorm</p>
+            <p className="project-description">
+              Utilized Ghidra, the NSA's reverse engineering framework, for malware analysis and software disassembly. Performed static analysis on executable files, decompiled binary code to understand program functionality, and analyzed suspicious software for potential security threats and vulnerabilities.
+            </p>
+            <div className="project-buttons">
+              <a href="https://ghidra-sre.org/" target="_blank" rel="noopener noreferrer" className="project-btn primary">Learn More</a>
             </div>
           </div>
 
