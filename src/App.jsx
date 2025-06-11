@@ -50,7 +50,7 @@ function App() {
             </div>
             <div className="hero-text">
               <h2 className="hero-subtitle">Welcome! I'm</h2>
-              <h1 className="hero-title">Sean McGrory.</h1>
+              <h1 className="hero-title">Sean McGrory</h1>
             </div>
           </div>
           
@@ -138,11 +138,11 @@ function App() {
             <div className="about-text">
               <div className="elevator-pitch">
                 <p className="intro-text">
-                  Born and raised in Queens, NYC, I'm a rising cybersecurity analyst currently on track to earn my Bachelor of Science in Cybersecurity in 2026 and my Master of Science in Cybersecurity in 2027 through the Fast Track B.S./M.S. program at St. John's University. Through hands on projects like developing a mobile application, building a full stack banking application, and competing in Capture the Flag events, I've gained experience in penetration testing, Python, Linux, and mobile development. As an attack member of the STJ CyberStorm Team and ACM Student Chapter, I've grown both technically and professionally, connecting classroom knowledge with real-world application.
+                  Born and raised in Queens, NYC. I'm currently on track to earn my Bachelor of Science in Cybersecurity in 2026 and my Master of Science in 2027 through the Fast Track B.S./M.S. program at St. John's University. Through hands on projects like developing a mobile application, building a full stack banking application, and competing in Capture the Flag events, I've gained experience in penetration testing, Python, Linux, and mobile development. As an attack member of the STJ CyberStorm Team and ACM Student Chapter, I've grown both technically and professionally, connecting classroom knowledge with real-world application.
                 </p>
                 
                 <p className="mission-text">
-                  I'm passionate about spending time with my twin who has special interests and playing sports like golf, football and pickleball. As a proud Knicks and Giants fan, I love following the highs and heartbreaks of New York sports. I'm also deeply interested in finance and markets, always curious about how the world works at both a technical and economic level. Driven by curiosity and core family values, I strive to use technology as a tool for solving real world problems and creating fundamentals.
+                  I'm passionate about spending time with my twin who has special needs and playing sports like golf, football and pickleball. As a proud Knicks and Giants fan, I love following the highs and heartbreaks of New York sports. I'm also deeply interested in finance and markets, always curious about how the world works at both a technical and economic level. Driven by curiosity and core family values, I strive to use technology as a tool for solving real world problems and creating fundamentals.
                 </p>
               </div>
             </div>
@@ -156,58 +156,96 @@ function App() {
 
       {/* Section 2: Projects */}
       <section id="projects" className="numbered-section">
-        <div className="section-header">
-          <span className="section-number">2</span>
-          <h2>Projects.</h2>
-          <p className="section-subtitle">Turning ideas into secure, innovative solutions.</p>
+        <div className="section-header centered">
+          <h2>Projects</h2>
         </div>
         
-        <div className="projects-grid">
+                <div className="projects-grid">
           <div className="project-card">
-            <h3>Student Networking Mobile App</h3>
-            <p className="project-tech">React Native • Expo • Club Networking</p>
+            <h3>Burp Suite</h3>
+            <p className="project-subtitle">St John's Cyberstorm</p>
             <p className="project-description">
-              Programmed a mobile app for students to discover and join clubs, featuring login, messaging, and club seeking features with React Context and custom components.
+              Utilized Burp Suite Professional for comprehensive web application security testing and vulnerability assessment. Performed penetration testing, intercepted HTTP requests, and identified security flaws in web applications through automated scanning and manual testing techniques.
             </p>
             <div className="project-buttons">
               <button className="project-btn primary">View Project</button>
-              <button className="project-btn secondary">GitHub</button>
             </div>
           </div>
 
           <div className="project-card">
-            <h3>Secure Banking Application</h3>
-            <p className="project-tech">Java • Account Management • Security</p>
+            <h3>Nmap</h3>
+            <p className="project-subtitle">St John's Cyberstorm</p>
             <p className="project-description">
-              Built a Java banking app with account transfers, deposits, and balance features, implementing file-based storage to manage user accounts and transaction history.
+              Leveraged Nmap for network discovery and security auditing to analyze server and website infrastructure details. Conducted port scanning, service detection, and OS fingerprinting to assess network security posture and identify potential vulnerabilities in target systems.
             </p>
             <div className="project-buttons">
               <button className="project-btn primary">View Project</button>
-              <button className="project-btn secondary">GitHub</button>
+            </div>
+          </div>
+
+          <div className="project-card">
+            <h3>Wireshark</h3>
+            <p className="project-subtitle">St John's Cyberstorm</p>
+            <p className="project-description">
+              Employed Wireshark for deep packet inspection and network traffic analysis to investigate security incidents and monitor network communications. Analyzed incoming network traffic, examined packet contents, and identified suspicious activities for incident response and forensic analysis.
+            </p>
+            <div className="project-buttons">
+              <button className="project-btn primary">View Project</button>
+            </div>
+          </div>
+
+          <div className="project-card">
+            <h3>ClubConnect</h3>
+            <p className="project-subtitle">St John's Hacks</p>
+            <p className="project-description">
+             Programmed a mobile app with React Native and Expo for students to discover and join clubs at St. John's University. Created login, messaging, and club tracking features with React Context and custom components to enhance student engagement and campus community building.
+            </p>
+            <div className="project-buttons">
+              <a href="https://github.com/X1PH3R/thebestteam" target="_blank" rel="noopener noreferrer" className="project-btn primary">View Project</a>
+            </div>
+          </div>
+
+          <div className="project-card">
+            <h3>Banking Application</h3>
+            <p className="project-subtitle">Secure Software Development</p>
+            <p className="project-description">
+              Built a comprehensive Java banking application with account transfers, deposits, and balance management features, implementing secure file-based storage to manage user accounts and transaction history. Developed as part of coursework focusing on secure coding practices and financial application security protocols.
+            </p>
+            <div className="project-buttons">
+              <button className="project-btn primary">View Project</button>
             </div>
           </div>
 
           <div className="project-card">
             <h3>Banking API & Frontend</h3>
-            <p className="project-tech">Java API • Secure Connections</p>
+            <p className="project-subtitle">Secure Software Development</p>
             <p className="project-description">
-              Designed a Java API to securely connect the frontend with banking functions, ensuring secure data transmission and proper authentication.
+              Designed a comprehensive Java API to securely connect the frontend with banking functions, ensuring secure data transmission and proper authentication protocols. Implemented RESTful endpoints for account management and transaction processing with industry-standard security practices.
             </p>
             <div className="project-buttons">
               <button className="project-btn primary">View Project</button>
-              <button className="project-btn secondary">GitHub</button>
             </div>
           </div>
 
           <div className="project-card">
-            <h3>Cryptography Tools</h3>
-            <p className="project-tech">Java • Encryption • Security</p>
+            <h3>Substitution Cipher</h3>
+            <p className="project-subtitle">Data Security and Cryptography</p>
             <p className="project-description">
-              Coded a substitution cipher program for message cryptography and cryptanalysis. Designed a Euclidean Algorithm in Java to secure internet communications.
+              Developed a comprehensive substitution cipher program for message encryption and decryption with cryptanalysis functionality. Implemented key generation, letter frequency analysis, and cryptanalysis techniques to demonstrate classical cryptography principles.
             </p>
             <div className="project-buttons">
-              <button className="project-btn primary">View Project</button>
-              <button className="project-btn secondary">GitHub</button>
+              <a href="https://github.com/SeanMcGrory-16/Substitution-Cipher" target="_blank" rel="noopener noreferrer" className="project-btn primary">View Project</a>
+            </div>
+          </div>
+
+          <div className="project-card">
+            <h3>Euclidean Algorithm</h3>
+            <p className="project-subtitle">Data Security and Cryptography</p>
+            <p className="project-description">
+              Implemented the Euclidean Algorithm in Java to generate secure keys for internet communications. Developed mathematical functions for finding greatest common divisors and modular arithmetic operations essential for cryptographic key generation.
+            </p>
+            <div className="project-buttons">
+              <a href="https://github.com/SeanMcGrory-16/Euclidean-Algorithm" target="_blank" rel="noopener noreferrer" className="project-btn primary">View Project</a>
             </div>
           </div>
         </div>
